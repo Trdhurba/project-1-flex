@@ -38,7 +38,7 @@ function renderhomepage()
   h1.stylemarginTop ="0"
  
   const fetch = () => {
-   fetch ()`$ {baseurl https://api.thecatapi.com/v1/images/search?limit=10&breed_ids=beng&api_key=REPLACE_ME
+   fetch("https://api.thecatapi.com/v1/images/search?limit=10&breed_ids=beng&api_key=REPLACE_ME")
   }
   const fetchlistcat  =() => {
      fetch ("http://localhost:3000/cat")
@@ -58,7 +58,7 @@ function renderhomepage()
 document.addEventListener("Domcontentloaded"), () => {
 renderlisthomepage();
 }
-attach listcatclick();
-attach listcatclick();
+attachlistcatclick();
+attachlistcatclick();
 attachHomepageclickEvent();
 
