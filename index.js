@@ -6,9 +6,8 @@
  /**globals **/
  
 // NODE GETTERS
-const MainDiv =() => Document.getElementByid("main")
-const listcatlink = document.getElementByid("list cat link");
-const Homepagelink =document.getElementById("home-page-link");
+const MainDiv = () => Document.getElementByid("main");
+
 /**templates **/
 const homepagestemplate = () => {
   return
@@ -32,22 +31,21 @@ function attachHomepageclickEvent() {
 function renderhomepage()
   //create the Html elements for the homepage
   //reset mainDiv();
-  const h1 = document.createElement(cat="medical short");
-  const p = document.createElement(cat= "groom list");
+  const h1 = document.createElement("medical short");
+  const p = document.createElement( "groom list");
+ 
   h1.innertext ="cat list page"
   h1.stylemarginTop ="0"
  
   const fetch = () => {
-   fetch (`$ {baseurlhttps://thecatapi.com/)
-  .then(res => res.json())
-  .then(data => console.log(data))
+   fetch ()`$ {baseurl https://api.thecatapi.com/v1/images/search?limit=10&breed_ids=beng&api_key=REPLACE_ME
   }
   const fetchlistcat  =() => {
      fetch ("http://localhost:3000/cat")
        .then(resp => resp.json())
        .then(data => console.log(data)) 
   }
-  MainDiv().appendchild(h1)
+  MainDiv().appendchild(h1);
   MainDiv().appendchild(p);
  
  
@@ -57,9 +55,10 @@ function renderhomepage()
   const li = Document.createElement("li");
   
 //domcontentloaded//
-document.addEventListener("Domcontentloaded"), () => renderlisthomepage();{
-
-attach listcatclick();
-attach listcatclick();
-attachHomepageclickEvent()
+document.addEventListener("Domcontentloaded"), () => {
+renderlisthomepage();
 }
+attach listcatclick();
+attach listcatclick();
+attachHomepageclickEvent();
+

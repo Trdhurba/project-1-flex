@@ -1,18 +1,67 @@
-{"cat": [ 
+[
    {
-     "id 1":
-     "png1"
+     "id": "LSaDk6OjY",
+     "url": "https://cdn2.thecatapi.com/images/LSaDk6OjY.jpg",
+     "width": 1080,
+     "height": 1080
    },
    {
-      "id 2":
-      "png2"
+     "id": "8pCFG7gCV",
+     "url": "https://cdn2.thecatapi.com/images/8pCFG7gCV.jpg",
+     "width": 750,
+     "height": 937
    },
-
-   {   "id 3":
-       "png3"
-   
+   {
+     "id": "8ciqdpaO5",
+     "url": "https://cdn2.thecatapi.com/images/8ciqdpaO5.jpg",
+     "width": 1080,
+     "height": 809
+   },
+   {
+     "id": "aaxNf4D0H",
+     "url": "https://cdn2.thecatapi.com/images/aaxNf4D0H.jpg",
+     "width": 1080,
+     "height": 1350
+   },
+   {
+     "id": "iWyIaja-G",
+     "url": "https://cdn2.thecatapi.com/images/iWyIaja-G.jpg",
+     "width": 1080,
+     "height": 769
+   },
+   {
+     "id": "8RsP7Xt3h",
+     "url": "https://cdn2.thecatapi.com/images/8RsP7Xt3h.jpg",
+     "width": 1024,
+     "height": 817
+   },
+   {
+     "id": "byQhFO7iV",
+     "url": "https://cdn2.thecatapi.com/images/byQhFO7iV.jpg",
+     "width": 1795,
+     "height": 2397
+   },
+   {
+     "id": "udZiLDG_E",
+     "url": "https://cdn2.thecatapi.com/images/udZiLDG_E.jpg",
+     "width": 880,
+     "height": 1100
+   },
+   {
+     "id": "sPMOo3Jn2",
+     "url": "https://cdn2.thecatapi.com/images/sPMOo3Jn2.jpg",
+     "width": 880,
+     "height": 1100
+   },
+   {
+     "id": "ZocD-pQxd",
+     "url": "https://cdn2.thecatapi.com/images/ZocD-pQxd.jpg",
+     "width": 880,
+     "height": 1100
    }
-   ]  
-}
+ ]
 
-   
+ 
+
+
+  
