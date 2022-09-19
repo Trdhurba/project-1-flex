@@ -6,57 +6,57 @@
  /**globals **/
  
 // NODE GETTERS
-const MainDiv = () => Document.getElementByid("main");
-
+const MainDiv = () => Document.getElementById("main");
+const Homepagelink = Document.getElementById (Homepagelink)
 /**templates **/
-const homepagestemplate = () => {
+const homepagesTemplate = () => {
   return
      <h1 class="centre-align">welcome to our cat tracker</h1>
 } 
 /**renders**/
-const rendersHomepage = () => {
-  MainDiv().innerHtml =homepagestemplate();
+const rendersHomePage = () => {
+  MainDiv().innerHTML =homepagesTemplate();
 }
 // Eventlisteners
-function attachlistcatclickEvent() {
-  listcatlink().addEventListener("click",renderlistcatpage)
+function attachlistCatClickEvent() {
+  listCatlink().AddEventListener("click",renderlistcatpage)
 }
 /**when dom loads  **/
 document.addEventListener('Domcontentloaded'), ()  =>
 renderhomepage();
-function attachHomepageclickEvent() {
+function attachHomepageClickEvent() {
   homepagelink().addEventListener("click",renderhomepage)
 }
 //eventHandlers
 function renderhomepage()
   //create the Html elements for the homepage
   //reset mainDiv();
-  const h1 = document.createElement("medical short(click)");
-  const p = document.createElement( "groom list(click)");
+  const h1 = Document.createElement("medical short(click)");
+  const p = Document.createElement( "groom list(click)");
  
   h1.innertext ="cat list page"
   h1.stylemarginTop ="0"
  
   const fetch = () => {
-   fetch("https://api.thecatapi.com/v1/images/search?limit=10&breed_ids=beng&api_key=REPLACE_ME")
+   fetchhttps//api.thecatapi.com/v1/images/search?limit=10 
   }
-  const fetchlistcat  =() => {
+  const fetchlistCat  =() => {
      fetch ("http://localhost:3000/cat")
        .then(resp => resp.json())
        .then(data => console.log(data)) 
   }
-  MainDiv().appendchild(h1);
-  MainDiv().appendchild(p);
+  MainDiv().AppendChild(h1);
+  MainDiv().AppendChild(p);
  
  
- resetMaindiv();
-  const h1 = document.createElement("h1");
-  const ul = document.createElement("ul");
-  const li = Document.createElement("li");
+ resetMainDiv();
+  const h1 = Document.CreateElement("h1");
+  const ul = Document.CreateElement("ul");
+  const li = Document.CreateElement("li");
   
 //domcontentloaded//
-document.addEventListener("Domcontentloaded"), () => {
-renderlisthomepage();
+Document.addEventListener("Domcontentloaded"), () => {
+renderlistHomepage();
 }
 attachlistcatclick();
 attachlistcatclick();
