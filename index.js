@@ -31,8 +31,8 @@ function attachHomepageClickEvent() {
 function renderhomepage()
   //create the Html elements for the homepage
   //reset mainDiv();
-  const h1 = Document.createElement("medical short(click)");
-  const p = Document.createElement( "groom list(click)");
+  const h1 = Document.CreateElement("medical short(click)");
+  const p = Document.CreateElement( "groom list(click)");
  
   h1.innertext ="cat list page"
   h1.stylemarginTop ="0"
