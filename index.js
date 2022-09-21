@@ -4,10 +4,12 @@
  *whats going to trigger event(click)
  *Effect (display and homepage)
  /**globals **/
- 
+ document.addEventListener("Domcontentloaded"), () => {
+  renderlistHomepage();
+  }
 // NODE GETTERS
-const MainDiv = () => Document.getElementById("main");
-const Homepagelink = Document.getElementById (Homepagelink)
+const mainDiv = () => document.getElementById("main");
+const Homepagelink = document.getElementById (Homepagelink)
 /**templates **/
 const homepagesTemplate = () => {
   return
@@ -15,15 +17,14 @@ const homepagesTemplate = () => {
 } 
 /**renders**/
 const rendersHomePage = () => {
-  MainDiv().innerHTML =homepagesTemplate();
+  mainDiv().innerHTML =homepagesTemplate();
 }
 // Eventlisteners
 function attachlistCatClickEvent() {
-  listCatlink().AddEventListener("click",renderlistcatpage)
+  listCatlink().addEventListener("click",renderlistcatpage)
 }
 /**when dom loads  **/
-document.addEventListener('Domcontentloaded'), ()  =>
-renderhomepage();
+
 function attachHomepageClickEvent() {
   homepagelink().addEventListener("click",renderhomepage)
 }
@@ -31,31 +32,37 @@ function attachHomepageClickEvent() {
 function renderhomepage()
   //create the Html elements for the homepage
   //reset mainDiv();
-  const h1 = Document.CreateElement("medical short(click)");
-  const p = Document.CreateElement( "groom list(click)");
  
   h1.innertext ="cat list page"
   h1.stylemarginTop ="0"
- 
-  const fetch = () => {
-   fetchhttps//api.thecatapi.com/v1/images/search?limit=10 
-  }
-  const fetchlistCat  =() => {
-     fetch ("http://localhost:3000/cat")
-       .then(resp => resp.json())
-       .then(data => console.log(data)) 
-  }
-  MainDiv().AppendChild(h1);
-  MainDiv().AppendChild(p);
+  base_url = 'https://api.thecatapi.com/v1/images/search?limit=10'
+  document.addEventListener("DOMContentLoaded", () => {
+    renderCatImages();
+    
+    function renderCatImages(){
+      fetch (base_url)
+      .then(res => res.json())
+    .then(data => {
+      console.log(data);
+      Array.from(data).forEach(cat => {
+        const img = document.createElement('img')
+        const catImageContainer = document.getElementById('catContainer')
+        img.src=cat.url
+        catImageContainer.append(img)
+      })
+    })}
+  })
+  mainDiv().AppendChild(h1);
+  mainDiv().AppendChild(p);
  
  
  resetMainDiv();
-  const h1 = Document.CreateElement("h1");
-  const ul = Document.CreateElement("ul");
-  const li = Document.CreateElement("li");
+  const h1 = document.CreateElement("h1");
+  const ul = document.CreateElement("ul");
+  const li = document.CreateElement("li");
   
 //domcontentloaded//
-Document.addEventListener("Domcontentloaded"), () => {
+document.addEventListener("Domcontentloaded"), () => {
 renderlistHomepage();
 }
 attachlistcatclick();
