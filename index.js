@@ -4,12 +4,12 @@
  *whats going to trigger event(click)
  *Effect (display and homepage)
  /**globals **/
- document.addEventListener("Domcontentloaded"), () => {
-  renderlistHomepage();
+ document.addEventListener("domContentLoaded"), () => {
+  RenderListHomepage();
   }
 // NODE GETTERS
 const mainDiv = () => document.getElementById("main");
-const Homepagelink = document.getElementById (Homepagelink)
+const homePageLink = document.getElementById (homePageLink)
 /**templates **/
 const homepagesTemplate = () => {
   return
@@ -19,22 +19,22 @@ const homepagesTemplate = () => {
 const rendersHomePage = () => {
   mainDiv().innerHTML =homepagesTemplate();
 }
-// Eventlisteners
-function attachlistCatClickEvent() {
-  listCatlink().addEventListener("click",renderlistcatpage)
+// eventListeners
+function AttachListCatClickEvent() {
+  listCatLink().addEventListener("click",RenderListCatPage)
 }
 /**when dom loads  **/
 
 function attachHomepageClickEvent() {
-  homepagelink().addEventListener("click",renderhomepage)
+  HomePageLink().addEventListener("click",RenderHomePage)
 }
 //eventHandlers
-function renderhomepage()
+function RenderHomepage()
   //create the Html elements for the homepage
   //reset mainDiv();
  
-  h1.innertext ="cat list page"
-  h1.stylemarginTop ="0"
+  h1.InnerText ="cat list page"
+  h1.StyleMarginTop ="0"
   base_url = 'https://api.thecatapi.com/v1/images/search?limit=10'
   document.addEventListener("DOMContentLoaded", () => {
     renderCatImages();
@@ -61,11 +61,11 @@ function renderhomepage()
   const ul = document.CreateElement("ul");
   const li = document.CreateElement("li");
   
-//domcontentloaded//
-document.addEventListener("Domcontentloaded"), () => {
-renderlistHomepage();
+//DomContentLoaded//
+document.addEventListener("DomContentLoaded"), () => {
+RenderListHomepage();
 }
-attachlistcatclick();
-attachlistcatclick();
-attachHomepageclickEvent();
+AttachListCatClick();
+AttachListCatClick();
+AttachHomePageClickEvent();
 
