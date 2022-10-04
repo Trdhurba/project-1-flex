@@ -32,7 +32,6 @@ function RenderHomepage() {
   mainDiv.addEventlistener(clickCatImageContainer)
 
 }
-
   //create the Html elements for the homepage
   //reset mainDiv();
 
@@ -43,7 +42,7 @@ base_url = 'https://api.thecatapi.com/v1/images/search?limit=10'
     function renderCatImages(){
       fetch (base_url)
       .then(res => res.json())
-    .then(data => {
+      .then(data => {
       console.log(data);
       Array.from(data).forEach(cat => {
         const img = document.createElement('img')
