@@ -4,7 +4,7 @@
  *whats going to trigger event(click)
  *Effect (display and homepage)
  /**globals **/
-document.addEventListener("DOMContentLoaded"), () => {
+ document.addEventListener("DOMContentLoaded"), () => {
   RenderListHomepage();
   }
 // NODE GETTERS
@@ -12,8 +12,9 @@ const mainDiv = document.getElementById("main");
 
 /**templates **/
 const homepagesTemplate = () => {
-  return <h1 class= "Centre-align">CAT TRACKER APP</h1>
-
+  return
+     <h1 class="centre-align"> cat tracker app</h1>
+} 
 /**renders**/
 const rendersListHomePage = () => {
   mainDiv().innerHTML =homepagesTemplate();
@@ -28,21 +29,21 @@ function attachHomepageClickEvent() {
   HomePageLink().addEventListener("click",RenderHomePage)
 }
 //eventHandlers
-function RenderHomepage() {
-  mainDiv.addEventlistener(clickCatImageContainer)
-
-}
+function RenderHomepage()
   //create the Html elements for the homepage
+  //post request to render cat magesContainer
   //reset mainDiv();
-
+ 
 h1.InnerText ="cat list page"
 h1.StyleMarginTop ="0"
 base_url = 'https://api.thecatapi.com/v1/images/search?limit=10'
+  document.addEventListener("DOMContentLoaded", () => {
+    renderCatImages();
     
     function renderCatImages(){
       fetch (base_url)
       .then(res => res.json())
-      .then(data => {
+    .then(data => {
       console.log(data);
       Array.from(data).forEach(cat => {
         const img = document.createElement('img')
@@ -51,11 +52,11 @@ base_url = 'https://api.thecatapi.com/v1/images/search?limit=10'
         catImageContainer.append(img)
       })
     })}
-  function listCatLink(catImageContainer) 
+  })
+  function listCatLink(catImageContainer)
   catImageContainer.addEventListener('click')
    (e); {
    e.preventDefault()
-   e.consolidate(catImageContainer)
    const catImageContainer = e.Target.querySelector(catImageContainer)
    function catImageContainer(renderCatImages) {
    renderCatImages(CatImageContainer)
@@ -63,20 +64,19 @@ base_url = 'https://api.thecatapi.com/v1/images/search?limit=10'
    }
    
    }
-  mainDiv().appendChild(h1);
-  mainDiv().appendChild(p);
+  mainDiv().AppendChild(h1);
+  mainDiv().AppendChild(p);
  
  
  resetMainDiv();
-const h1 = document.createElement("h1");
-const ul = document.createElement("ul");
-const li = document.createElement("li");
+const h1 = document.CreateElement("h1");
+const ul = document.CreateElement("ul");
+const li = document.CreateElement("li");
   
 //DomContentLoaded//
-document.addEventListener("DOMContentLoaded"), () => {
-RenderHomepage();
+document.addEventListener("DomContentLoaded"), () => {
+RenderListHomepage();
 }
 AttachListCatClick();
 AttachListCatClick();
 AttachHomePageClickEvent();
-}
