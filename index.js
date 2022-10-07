@@ -11,9 +11,9 @@
 const mainDiv = document.getElementById("main");
 
 /**templates **/
-const homepagesTemplate = () => {
+const HomePagesTemplate = () => {
   return
-     <h1 class="centre-align"> cat tracker app</h1>
+     <h1 class="centre-align">CAT TRACKER APP</h1>
 } 
 /**renders**/
 const rendersListHomePage = () => {
@@ -31,7 +31,6 @@ function attachHomepageClickEvent() {
 //eventHandlers
 function RenderHomepage()
   //create the Html elements for the homepage
-  //post request to render cat magesContainer
   //reset mainDiv();
  
 h1.InnerText ="cat list page"
@@ -53,17 +52,6 @@ base_url = 'https://api.thecatapi.com/v1/images/search?limit=10'
       })
     })}
   })
-  function listCatLink(catImageContainer)
-  catImageContainer.addEventListener('click')
-   (e); {
-   e.preventDefault()
-   const catImageContainer = e.Target.querySelector(catImageContainer)
-   function catImageContainer(renderCatImages) {
-   renderCatImages(CatImageContainer)
-   CatImageContainer.removeEventListener(click)
-   }
-   
-   }
   mainDiv().AppendChild(h1);
   mainDiv().AppendChild(p);
  

@@ -12,3 +12,23 @@
   header {
       background:#55d6aa;
   }
+  footer {
+      background:#fff;
+  }
+
+  /* showcase */
+  #showcase {
+    min-height: 400px;
+    background:url('https://api.thecatapi.com/v1/images/search?limit=10') no-repeat;
+ 
+    text-align:centre;
+    color:#ffffff;
+
+
+  }
+  #showcase h1 {
+  margin-top: 100px;
+  font-size:55px;
+  margin-bottom: 10px;
+
+  }
