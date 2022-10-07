@@ -12,8 +12,7 @@ const mainDiv = document.getElementById("main");
 
 /**templates **/
 const HomePagesTemplate = () => {
-  return
-     <h1 class="centre-align">CAT TRACKER APP</h1>
+  document.getElementById("main").innerHTML ="homepage-templates"
 } 
 /**renders**/
 const rendersListHomePage = () => {
