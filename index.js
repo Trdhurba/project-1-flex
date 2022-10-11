@@ -12,8 +12,7 @@ const mainDiv = document.getElementById("main");
 
 /**templates **/
 const homepagesTemplate = () => {
-  return
-     <h1 class="centre-align"> cat tracker app</h1>
+  return '<h1 class="centre-align"> cat tracker app</h1>'
 } 
   
  
@@ -36,8 +35,8 @@ const RenderCatImages= () => document.querySelectorAll
   //create the Html elements for the homepage
   //reset mainDiv();
  
-h1.InnerText ="cat list page"
-h1.StyleMarginTop ="0"
+h1.innerText ="cat list page"
+h1.styleMarginTop ="0"
 base_url = 'https://api.thecatapi.com/v1/images/search?limit=10'
   document.addEventListener("DOMContentLoaded", () => {
     renderCatImages();
@@ -55,14 +54,14 @@ base_url = 'https://api.thecatapi.com/v1/images/search?limit=10'
       })
     })}
   })
-  mainDiv().AppendChild(h1);
-  mainDiv().AppendChild(p);
+  mainDiv().appendChild(h1);
+  mainDiv().appendChild(p);
  
  
  resetMainDiv();
-const h1 = document.CreateElement("h1");
-const ul = document.CreateElement("ul");
-const li = document.CreateElement("li");
+const h1 = document.createElement("h1");
+const ul = document.createElement("ul");
+const li = document.createElement("li");
   
 //DomContentLoaded//
 document.addEventListener("DomContentLoaded"), () => {
