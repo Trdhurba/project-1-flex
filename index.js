@@ -11,9 +11,12 @@
 const mainDiv = document.getElementById("main");
 
 /**templates **/
-const HomePagesTemplate = () => {
-  document.getElementById("main").innerHTML ="homepage-templates"
+const homepagesTemplate = () => {
+  return
+     <h1 class="centre-align"> cat tracker app</h1>
 } 
+  
+ 
 /**renders**/
 const rendersListHomePage = () => {
   mainDiv().innerHTML =homepagesTemplate();
@@ -28,7 +31,8 @@ function attachHomepageClickEvent() {
   HomePageLink().addEventListener("click",RenderHomePage)
 }
 //eventHandlers
-function RenderHomepage()
+
+const RenderCatImages= () => document.querySelectorAll 
   //create the Html elements for the homepage
   //reset mainDiv();
  
