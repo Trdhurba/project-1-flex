@@ -4,7 +4,7 @@
  *whats going to trigger event(click)
  *Effect (display and homepage)
  /**globals **/
- document.addEventListener("DOMContentLoaded"), () => {
+ document.addEventListener("DOMContentLoaded"); () => {
   RenderListHomepage();
   }
 // NODE GETTERS
@@ -31,11 +31,12 @@ function attachHomepageClickEvent() {
 }
 //eventHandlers
 
-const RenderCatImages= () => document.querySelectorAll 
+ rendersListHomePage = () => { return rendersListHomePage;
+}
   //create the Html elements for the homepage
   //reset mainDiv();
  
-h1.innerText ="cat list page"
+h1.innerText ="list cat page"
 h1.styleMarginTop ="0"
 base_url = 'https://api.thecatapi.com/v1/images/search?limit=10'
   document.addEventListener("DOMContentLoaded", () => {
