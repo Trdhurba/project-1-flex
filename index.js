@@ -5,20 +5,20 @@
  *Effect (display and homepage)
  /**globals **/
  document.addEventListener("DOMContentLoaded"); () => {
-  RenderListHomepage();
+  renderListHomePage();
   }
 // NODE GETTERS
 const mainDiv = document.getElementById("main");
 
 /**templates **/
 const homepagesTemplate = () => {
-  return '<h1 class="centre-align"> cat tracker app</h1>'
+  return '<h1 class="centre-align" cat tracker app</h1>'
 } 
   
  
 /**renders**/
-const rendersListHomePage = () => {
-  mainDiv().innerHTML =homepagesTemplate();
+const renderListHomePage = () => {
+  mainDiv.innerHTML =homepagesTemplate();
 }
 // eventListeners
 function AttachListCatClickEvent() {
@@ -30,9 +30,9 @@ function attachHomepageClickEvent() {
   HomePageLink().addEventListener("click",RenderHomePage)
 }
 //eventHandlers
+RenderListHomepage.addEventListener("click),listHomePage")
+ 
 
- rendersListHomePage = () => { return rendersListHomePage;
-}
   //create the Html elements for the homepage
   //reset mainDiv();
  
