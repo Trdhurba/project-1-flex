@@ -19,4 +19,4 @@ Baths (click)
 ### Overview - the purpose of the application is to do create and search cat tracker.
 Requirements - json-server might need README.md to be installed.
 How to use - instructions on what to do after they git fork / clone the application. Like load index.html into browser, run json-server –watch db.json in order to run the server to connect to the database.
-Contributing (optional) - this is how they could contribute to your application if you wanted to make it open source.
+

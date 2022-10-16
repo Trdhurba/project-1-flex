@@ -4,9 +4,7 @@
  *whats going to trigger event(click)
  *Effect (display and homepage)
  /**globals **/
- document.addEventListener("DOMContentLoaded"); () => {
-  renderListHomePage();
-  }
+ 
 // NODE GETTERS
 const mainDiv = document.getElementById("main");
 
@@ -14,8 +12,6 @@ const mainDiv = document.getElementById("main");
 const homepagesTemplate = () => {
   return '<h1 class="centre-align" cat tracker app</h1>'
 } 
-  
- 
 /**renders**/
 const renderListHomePage = () => {
   mainDiv.innerHTML =homepagesTemplate();
@@ -68,6 +64,5 @@ const li = document.createElement("li");
 document.addEventListener("DomContentLoaded"), () => {
 RenderListHomepage();
 }
-AttachListCatClick();
 AttachListCatClick();
 AttachHomePageClickEvent();
