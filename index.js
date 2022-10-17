@@ -8,7 +8,7 @@
   renderListHomePage();
   }
 // NODE GETTERS
-const mainDiv = document.getElementById("main");
+const mainDiv = document.getElementById("main"); 
 
 /**templates **/
 const homepagesTemplate = () => {
@@ -31,8 +31,8 @@ function attachHomepageClickEvent() {
 RenderListHomepage.addEventListener("click),listHomePage")
  
 
-  //create the Html elements for the homepage
-  //reset mainDiv();
+//create the Html elements for the homepage
+ //reset mainDiv();
  
 h1.innerText ="list cat page"
 h1.styleMarginTop ="0"
@@ -56,8 +56,7 @@ base_url = 'https://api.thecatapi.com/v1/images/search?limit=10'
   mainDiv().appendChild(h1);
   mainDiv().appendChild(p);
  
- 
- resetMainDiv();
+resetMainDiv();
 const h1 = document.createElement("h1");
 const ul = document.createElement("ul");
 const li = document.createElement("li");
