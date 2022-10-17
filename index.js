@@ -4,7 +4,7 @@
  *whats going to trigger event(click)
  *Effect (display and homepage)
  /**globals **/
- document.addEventListener("DOMContentLoaded"); () => {
+ document.addEventListener("DomContentLoaded"), () => {
   renderListHomePage();
   }
 // NODE GETTERS
