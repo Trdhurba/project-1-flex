@@ -4,9 +4,9 @@
  *whats going to trigger event(click)
  *Effect (display and homepage)
  /**globals **/
- document.addEventListener("DomContentLoaded"), () => {
-  renderListHomePage();
-  }
+ document.addEventListener("DomContentLoaded)", () => {
+  renderListHomePage();})
+  
 // NODE GETTERS
 const mainDiv = document.getElementById("main"); 
 
@@ -27,8 +27,6 @@ function AttachListCatClickEvent() {
 function attachHomepageClickEvent() {
   HomePageLink().addEventListener("click",RenderHomePage)
 }
-//eventHandlers
-RenderListHomepage.addEventListener("click),listHomePage")
  
 
 //create the Html elements for the homepage
