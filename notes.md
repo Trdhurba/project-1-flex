@@ -5,7 +5,7 @@
 ### features
 *create cat (MVP)
 *display cat on load(MVP)
-*click on links to didplay either form or list or homepage (MVP)
-*Randomise cat (stretch)
+*click on links to display either form or list or homepage (MVP)
+*Random cat (stretch)
 
 -homepage
