@@ -4,11 +4,13 @@
  *whats going to trigger event(click)
  *Effect (display and homepage)
  /**globals **/
- document.addEventListener("DomContentLoaded)", () => {
-  renderListHomePage();})
-  
+ document.addEventListener ("domContentLoaded"), () => {
+  renderListHomePage();
+}
 // NODE GETTERS
 const mainDiv = document.getElementById("main"); 
+
+const homePageLink =document.getElementById("home-page-link");
 
 /**templates **/
 const homepagesTemplate = () => {
