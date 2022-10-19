@@ -1,4 +1,4 @@
-/** 
+/*
  *how to think of events(3 question rule)* 
  *at what time can i do this events.
  *whats going to trigger event(click)
