@@ -24,21 +24,34 @@ const renderListHomePage = () => {
 function AttachListCatClickEvent() {
   listCatLink().addEventListener("click",RenderListCatPage)
 }
+//addEventListener to the form calling the EventHandler,create Cat Name.addEventListener(submit,create list cat form)
+
+function CreateCatName () {
+  console.log ("submit,CatName!!!")
+}
+//this EventHandler should create a New cat name object and persist data.
+  
+//Create a new cat Name object.
+const nameObj= {
+  "id": "LSaDk6OjY",
+  "url": "https://cdn2.thecatapi.com/images/LSaDk6OjY.jpg",
+  "width": 500,
+  "height": 500
+}
 /**when dom loads  **/
 
 function attachHomepageClickEvent() {
   HomePageLink().addEventListener("click",RenderHomePage)
 }
  
-
 //create the Html elements for the homepage
  //reset mainDiv();
  
 h1.innerText ="list cat page"
 h1.styleMarginTop ="0"
 base_url = 'https://api.thecatapi.com/v1/images/search?limit=10'
-  document.addEventListener("DOMContentLoaded", () => {
-    renderCatImages();
+document.addEventListener("DOMContentLoaded", () => {
+   renderCatImages();
     
     function renderCatImages(){
       fetch (base_url)
