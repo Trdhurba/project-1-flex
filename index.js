@@ -25,28 +25,23 @@ function AttachListCatClickEvent() {
   listCatLink().addEventListener("click",RenderListCatPage)
 }
 //eventListeners
-document.querySelector(CatTracker-Form).addEventListener( 'submit',handleSubmit)
+const catTrackerForm = document.querySelector("#catTracker-form")
 
 //Event handlers
 function handleSubmit(e) {
 e.preventDefault()
 }
-let catObj ={
-name:e.target.name.value,
-ImgUrl:e.target.image-url.value
-}
-RenderCat(CatObject)
-LSaDK6OJY.jpgCat(catObject)
+console.log( e.target.new_imgUrl.value)
 
 fetch(base_url, {
 method:'post',
 headers: {
   'content-type': 'application/json'
 },
-body: json.stringify(new images)
+body:json.stringify(new images)
 })
 .then(resp => resp.json())
-.then(images=> RenderCatImages(images))
+.then(newCatObject=> renderCat(newCatObject))
 
 
 /**when dom loads  **/
