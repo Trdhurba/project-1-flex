@@ -29,15 +29,29 @@ function AttachListCatClickEvent() {
 function CreateCatName () {
   console.log ("submit,CatName!!!")
 }
-//this EventHandler should create a New cat name object and persist data.
-  
+//this EventHandler should create a New CatImages and persist data.
+
 //Create a new cat Name object.
-const nameObj= {
-  "id": "LSaDk6OjY",
-  "url": "https://cdn2.thecatapi.com/images/LSaDk6OjY.jpg",
+const CatImages = {
+ "id": "LSaDk6OjY",
+ "url": "https://cdn2.thecatapi.com/images/LSaDk6OjY.jpg",
   "width": 500,
   "height": 500
 }
+//persist this images on the server_request object tags.
+
+fetch(base_url, {
+method:'post',
+headers: {
+  'content-type': 'application/json'
+},
+body: json.stringify(new images)
+})
+.then(resp => resp.json())
+.then(images=> RenderImages(images))
+
+//.then(RenderImages) //refactored line 51
+
 /**when dom loads  **/
 
 function attachHomepageClickEvent() {
