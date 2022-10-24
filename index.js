@@ -24,21 +24,19 @@ const renderListHomePage = () => {
 function AttachListCatClickEvent() {
   listCatLink().addEventListener("click",RenderListCatPage)
 }
-//addEventListener to the form calling the EventHandler,create Cat Name.addEventListener(submit,create list cat form)
+//eventListeners
+document.querySelector(CatTracker-Form).addEventListener( 'submit',handleSubmit)
 
-function CreateCatName () {
-  console.log ("submit,CatName!!!")
+//Event handlers
+function handleSubmit(e) {
+e.preventDefault()
 }
-//this EventHandler should create a New CatImages and persist data.
-
-//Create a new cat Name object.
-const CatImages = {
- "id": "LSaDk6OjY",
- "url": "https://cdn2.thecatapi.com/images/LSaDk6OjY.jpg",
-  "width": 500,
-  "height": 500
+let catObj ={
+name:e.target.name.value,
+ImgUrl:e.target.image-url.value
 }
-//persist this images on the server_request object tags.
+RenderCat(CatObject)
+LSaDK6OJY.jpgCat(catObject)
 
 fetch(base_url, {
 method:'post',
@@ -48,9 +46,8 @@ headers: {
 body: json.stringify(new images)
 })
 .then(resp => resp.json())
-.then(images=> RenderImages(images))
+.then(images=> RenderCatImages(images))
 
-//.then(RenderImages) //refactored line 51
 
 /**when dom loads  **/
 
@@ -70,7 +67,7 @@ document.addEventListener("DOMContentLoaded", () => {
     function renderCatImages(){
       fetch (base_url)
       .then(res => res.json())
-    .then(data => {
+      .then(data => {
       console.log(data);
       Array.from(data).forEach(cat => {
         const img = document.createElement('img')
