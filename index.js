@@ -22,32 +22,24 @@ const renderListHomePage = () => {
 function AttachListCatClickEvent() {
 listCatLink().addEventListener("click",RenderListCatPage)
 }
-const catTrackerForm = document.querySelector("#catTracker-form")
-
-//Event handlers
-function handleSubmit(e) {
-e.preventDefault()
+//Add an Eventlistener to the catForm calling the event handler,create cat form
+ catForm.addEventListener('submit',createName)
+ function createName () {
+ event.preventDefault()
+//this event handler should create a new cat Name object and persist image_url link.
+debugger;
+//create an name object and persist image_url link on browser.
+const NameObj = {
+  //NAME:
+  //image_url:
+  //description:
 }
-debugger
-const input = document.getElementById('button') 
-input.addEventListener('submit')
 
-fetch(base_url, {
-method:'post',
-headers: {
-  'content-type': 'application/json'
-},
-body:json.stringify(new images)
-})
-.then(resp => resp.json())
-.then(newCatObject=> renderCat(newCatObject))
-
+}
 /**when dom loads  **/
-
 function attachHomepageClickEvent() {
   HomePageLink().addEventListener("click",RenderHomePage)
 }
- 
 //create the Html elements for the homepage
 //reset mainDiv();
  
