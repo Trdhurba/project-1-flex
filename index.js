@@ -4,9 +4,7 @@
  *whats going to trigger event(click)
  *Effect (display and homepage)
  /**globals **/
- document.addEventListener(AttachListCatClickEvent) ("domContentLoaded"), () => {
-  renderListHomePage();
-}
+ 
 // NODE GETTERS
 const mainDiv = document.getElementById("main"); 
 
@@ -22,16 +20,17 @@ const renderListHomePage = () => {
 }
 // eventListeners
 function AttachListCatClickEvent() {
-  listCatLink().addEventListener("click",RenderListCatPage)
+listCatLink().addEventListener("click",RenderListCatPage)
 }
-//eventListeners
 const catTrackerForm = document.querySelector("#catTracker-form")
 
 //Event handlers
 function handleSubmit(e) {
 e.preventDefault()
 }
-console.log( e.target.new_imgUrl.value)
+debugger
+const input = document.getElementById('button') 
+input.addEventListener('submit')
 
 fetch(base_url, {
 method:'post',
@@ -43,7 +42,6 @@ body:json.stringify(new images)
 .then(resp => resp.json())
 .then(newCatObject=> renderCat(newCatObject))
 
-
 /**when dom loads  **/
 
 function attachHomepageClickEvent() {
@@ -51,7 +49,7 @@ function attachHomepageClickEvent() {
 }
  
 //create the Html elements for the homepage
- //reset mainDiv();
+//reset mainDiv();
  
 h1.innerText ="list cat page"
 h1.styleMarginTop ="0"
