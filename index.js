@@ -22,19 +22,40 @@ const renderListHomePage = () => {
 function AttachListCatClickEvent() {
 listCatLink().addEventListener("click",RenderListCatPage)
 }
+function createName () {
+}
 //Add an Eventlistener to the catForm calling the event handler,create cat form
- catForm.addEventListener('submit',createName)
- function createName () {
- event.preventDefault()
+
+const catForm = document.querySelector('submitButton');
+  
+catForm.addEventListener('submit', event => console.log(event)) 
+event.preventDefault()
 //this event handler should create a new cat Name object and persist image_url link.
-debugger;
-//create an name object and persist image_url link on browser.
+const name = document.querySelector('#name-input').value
+const image_url = document.querySelector('image_url-input').value
+//create an name id and persist image_url link on browser.
 const NameObj = {
-  //NAME:
-  //image_url:
-  //description:
+  "name id": "LSaDk6OjY",
+  "url":"https://cdn2.thecatapi.com/images/LSaDk6OjY.jpg",
+  "width" :200,
+  "height" :200
 }
 
+//persist image_url link on browser.
+
+fetch(base_url,  {
+  method: 'post',
+  headers: {
+    'content-type': 'application/json'
+  },
+  body: json.stringify(nameObj)
+})
+.then(resp =>resp.json())
+.then(name =>renderName(name))
+
+// .then(renderName) //refactored line 53.
+function renderName(Name) {
+console.log('NameObj')
 }
 /**when dom loads  **/
 function attachHomepageClickEvent() {
