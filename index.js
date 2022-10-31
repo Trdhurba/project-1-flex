@@ -37,8 +37,7 @@ const image_url = document.querySelector('image_url-input').value
 const NameObj = {
   "name id": "LSaDk6OjY",
   "url":"https://cdn2.thecatapi.com/images/LSaDk6OjY.jpg",
-  "width" :200,
-  "height" :200
+  
 }
 
 //persist image_url link on browser.
